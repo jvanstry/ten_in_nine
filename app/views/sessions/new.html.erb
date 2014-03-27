@@ -1,2 +1,10 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<% provide(:title, "Admin") %>
+<% flash.each do |key, value| %>
+  <div class="error <%= key %>"><%= value %></div>
+<% end %>
+<h1>Admin Signin</h1>
+<%= form_for :session do |f| %>
+  name: <%= f.text_field :name %><br />
+  password: <%= f.text_field :password %><br />
+  <%= f.submit 'signin'%>
+<% end %>
