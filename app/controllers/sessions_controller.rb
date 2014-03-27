@@ -4,9 +4,9 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate(params[:session][:password])
       cookies.permanent[:token] = user.token
-      redirect_to user
+      redirect_to user_path user
     else
-      flash.now[:signin] = 'Invalid email/password combination'
+      flash.now[:signin] = 'try again'
       render 'new'
     end
   end

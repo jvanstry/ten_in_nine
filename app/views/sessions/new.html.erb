@@ -1,7 +1,4 @@
-<% provide(:title, "Admin") %>
-<% flash.each do |key, value| %>
-  <div class="error <%= key %>"><%= value %></div>
-<% end %>
+<% provide(:title, 'Admin') %>
 <h1>Admin Signin</h1>
 <%= form_for :session do |f| %>
   name: <%= f.text_field :name %><br />

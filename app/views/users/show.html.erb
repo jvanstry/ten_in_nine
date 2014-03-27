@@ -1,0 +1,26 @@
+<% provide(:title, 'Admin Panel') %>
+<h1>
+  Welcome to your wonderful admin panel Jer
+</h1>
+<h4>
+  <%= link_to 'log out', logout_path, :method => :delete %>
+</h4>
+<div class='admin new-project'>
+  <h2>
+    <%= link_to 'new project', new_project_path, :method => :get %>
+  </h2>
+</div>
+<h2>
+  old projects
+</h2>
+<ul class='admin projects'>
+  <% @projects.each do |proj| %>
+    <li>
+      <h3>  
+        <%= link_to "#{proj.name}", project_path(proj), :method => :get %>
+        <%= link_to 'delete project', project_path(proj), :method => :delete %>
+      </h3>
+    </li>
+    <br />
+  <% end %>
+</ul>

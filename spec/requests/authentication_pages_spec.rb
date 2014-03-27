@@ -19,17 +19,18 @@ describe 'authentication' do
 
     describe 'valid credentials' do 
       let(:admin) { FactoryGirl.create(:admin) }
-      let(:project) { FactoryGirl.create(:project) }
 
       before do
+        FactoryGirl.create(:project)
+
         fill_in 'session_name',    with: admin.name
         fill_in 'session_password', with: admin.password
         click_button 'signin'
       end
 
-      it { should have_title 'Admin Panel'}
-      it { should have_link 'new project', href: new_project_path}
-      it { should have_link 'delete project', href: project_path}
+      it { should have_title 'Admin Panel' }
+      it { should have_link 'new project', href: new_project_path }
+      it { should have_content 'delete project' }
     end
   end
 end

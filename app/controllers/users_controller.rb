@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
+  include HackStopper
+  
   def show
-    user = User.find_by session[:token]
+    HackStopper.verify_admin(cookies[:token])
+    @projects =  Project.all
   end
 end
