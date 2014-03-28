@@ -1,8 +1,5 @@
-class UsersController < ApplicationController
-  include HackStopper
-  
-  def show
-    HackStopper.verify_admin(cookies[:token])
+class UsersController < ApplicationController  
+  def show 
     @projects =  Project.all
   end
 end

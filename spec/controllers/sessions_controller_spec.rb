@@ -2,17 +2,15 @@ require 'spec_helper'
 
 describe SessionsController do
 
-  describe "GET 'new'" do
-    it "returns http success" do
-      get 'new'
-      expect(response).to be_success
+  describe "" do
+    it "" do
+
     end
   end
 
-  describe "GET 'destroy'" do
-    it "returns http success" do
-      get 'destroy'
-      expect(response).to be_success
+  describe "" do
+    it "" do
+
     end
   end
 
