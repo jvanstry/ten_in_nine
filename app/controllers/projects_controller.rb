@@ -1,11 +1,14 @@
 class ProjectsController < ApplicationController
 
   def destroy
-    HackStopper.verify_admin(cookies[:token])
-
-    Project.find(params[:id]).destroy
-
-    flash.now[:project_deleted] = 'project successfully deleted'
+    if current_user
+      Project.find(params[:id]).destroy
+      flash.now[:project_deleted] = 'project successfully deleted'
+      redirect_to current_user
+    else
+      flash.now[:hacker] = "dont hack me bro"
+      render root_path
+    end
   end
 
   def show

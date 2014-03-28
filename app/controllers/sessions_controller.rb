@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       user.update_attributes(token: user.create_hash)
       cookies.permanent[:token] = user.token
+      current_user = user
 
       redirect_to user_path user
     else
