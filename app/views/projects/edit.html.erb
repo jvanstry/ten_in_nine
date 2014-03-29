@@ -2,7 +2,7 @@
 <h1>
   Edit this guy
 </h1>
-<%= form_for @project do |proj| %>
+<%= form_for @project, :method => :patch do |proj| %>
   name: <%= proj.text_field :name %><br>
   github url: <%= proj.text_field :github_url %><br>
   thumbnail_url: <%= proj.text_field :thumbnail_url %><br>

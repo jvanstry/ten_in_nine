@@ -18,7 +18,7 @@
     <li>
       <h3>  
         <%= link_to "#{proj.name}", project_path(proj), :method => :get %>
-        <%= link_to 'edit project', project_path(proj), :method => :patch %>
+        <%= link_to 'edit project', project_path(proj), :method => :get %>
         <%= link_to 'delete project', project_path(proj), :method => :delete %>
       </h3>
     </li>
