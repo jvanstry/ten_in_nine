@@ -1,11 +1,11 @@
-<% provide(:title, 'New Project') %>
+<% provide(:title, 'Edit Project') %>
 <h1>
-  Create this guy
+  Edit this guy
 </h1>
 <%= form_for @project do |proj| %>
   name: <%= proj.text_field :name %><br>
   github url: <%= proj.text_field :github_url %><br>
   thumbnail_url: <%= proj.text_field :thumbnail_url %><br>
   description: <%= proj.text_area :description %><br><br>
-  <%= proj.submit 'create project'%>
+  <%= proj.submit 'Edit'%>
 <% end %>

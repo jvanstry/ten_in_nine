@@ -21,6 +21,10 @@ class ProjectsController < ApplicationController
   def create
   end
 
+  def update
+    @project = Project.find(params[:id])
+  end
+
   private
     def verify_admin
       unless User.find_by_token(token)
