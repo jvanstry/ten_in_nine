@@ -6,6 +6,7 @@
   name: <%= proj.text_field :name %><br>
   github url: <%= proj.text_field :github_url %><br>
   thumbnail_url: <%= proj.text_field :thumbnail_url %><br>
-  description: <%= proj.text_area :description %><br><br>
+  description: <%= proj.text_area :description %><br>
+  tags: <%= proj.text_field :tag_list %><br><br>
   <%= proj.submit 'Edit'%>
 <% end %>

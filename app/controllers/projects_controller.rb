@@ -26,6 +26,14 @@ class ProjectsController < ApplicationController
 
   def update
     hacker_please unless current_user
+
+    @project = Project.find(params[:id])
+    
+    if @project.update_attributes(project_params)
+      redirect_to current_user
+    else
+      render 'edit'
+    end
   end
 
   def edit
@@ -39,6 +47,6 @@ class ProjectsController < ApplicationController
     end
 
     def project_params
-      params.require(:project).permit(:name, :github_url, :thumbnail_url, :description)
+      params.require(:project).permit(:name, :github_url, :thumbnail_url, :description, :tag_list)
     end
 end
