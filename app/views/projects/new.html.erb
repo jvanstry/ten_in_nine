@@ -4,7 +4,7 @@
 </h1>
 <%= form_for @project do |proj| %>
   name: <%= proj.text_field :name %><br>
-  github url: <%= proj.text_field :github_url %><br>
+  github_url: <%= proj.text_field :github_url %><br>
   thumbnail_url: <%= proj.text_field :thumbnail_url %><br>
   description: <%= proj.text_area :description %><br>
   tags: <%= proj.text_field :tag_list %><br><br>

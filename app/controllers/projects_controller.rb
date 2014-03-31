@@ -20,8 +20,12 @@ class ProjectsController < ApplicationController
   def create
     hacker_please unless current_user
 
-    Project.create(project_params)
-    redirect_to current_user
+    if Project.create(project_params)
+      redirect_to current_user
+    else
+      flash.now[:incomplete] = "name, github, and description required"
+      redirect_to new_project_path
+    end
   end
 
   def update
