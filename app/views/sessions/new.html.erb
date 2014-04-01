@@ -1,7 +1,9 @@
 <% provide(:title, 'Admin') %>
 <h1>Admin Signin</h1>
 <%= form_for :session do |f| %>
-  name: <%= f.text_field :name %><br />
-  password: <%= f.text_field :password %><br />
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br>
+  <%= f.label :password %>:
+  <%= f.text_field :password %><br>
   <%= f.submit 'signin'%>
 <% end %>

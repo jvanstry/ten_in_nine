@@ -3,10 +3,15 @@
   Create this guy
 </h1>
 <%= form_for @project do |proj| %>
-  name: <%= proj.text_field :name %><br>
-  github_url: <%= proj.text_field :github_url %><br>
-  thumbnail_url: <%= proj.text_field :thumbnail_url %><br>
-  description: <%= proj.text_area :description %><br>
-  tags: <%= proj.text_field :tag_list %><br><br>
+  <%= proj.label :name %>:
+  <%= proj.text_field :name %>
+  <%= proj.label :github_url %>:
+  <%= proj.text_field :github_url %>
+  <%= proj.label :thumbnail_url %>:
+  <%= proj.text_field :thumbnail_url %>
+  <%= proj.label :description %>:
+  <%= proj.text_area :description %>
+  <%= proj.label :tag_list %>:
+  <%= proj.text_field :tag_list %><br>
   <%= proj.submit 'create project'%>
 <% end %>

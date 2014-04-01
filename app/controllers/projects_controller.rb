@@ -18,18 +18,20 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    hacker_please unless current_user
+    return hacker_please unless current_user
 
-    if Project.create(project_params)
+    @project = Project.new(project_params)
+
+    if @project.save
       redirect_to current_user
     else
-      flash.now[:incomplete] = "name, github, and description required"
+      flash[:incomplete] = "name, github, and description required"
       redirect_to new_project_path
     end
   end
 
   def update
-    hacker_please unless current_user
+    return hacker_please unless current_user
 
     @project = Project.find(params[:id])
     
@@ -46,8 +48,8 @@ class ProjectsController < ApplicationController
 
   private
     def hacker_please
-      flash.now[:hacker] = "dont hack me bro"
-      render root_path
+      flash[:hacker] = "dont hack me bro"
+      redirect_to root_path
     end
 
     def project_params
