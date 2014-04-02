@@ -1,3 +1,552 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    font-weight: inherit; /* 1 */
+    margin: 0; /* 3 */
+    padding: 0;
+}
+
+/**
+ * Remove the default button background color that browsers set
+ */
+
+button {
+    background: transparent;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * Make sure selects don't get the default browser styles.
+ */
+select {
+  -webkit-appearance: none;
+}
+
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ * 3. Disable resizing by default.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    resize: none; /* 3 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul, li {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+button,
+input {
+  font-size: inherit;
+  color: inherit;
+  border: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fluid-span-1 {
+  width: 10.75%;
+}
+
+.fluid-span-2 {
+  width: 23.5%;
+}
+
+.fluid-span-3 {
+  width: 36.25%;
+}
+
+.fluid-span-4 {
+  width: 49%;
+}
+
+.fluid-span-5 {
+  width: 61.75%;
+}
+
+.fluid-span-6 {
+  width: 74.5%;
+}
+
+.fluid-span-7 {
+  width: 87.25%;
+}
+
+.fluid-span-8 {
+  width: 100%;
+}
+
+.fluid-offset-1 {
+  margin-left: 12.75%;
+}
+
+.fluid-offset-2 {
+  margin-left: 25.5%;
+}
+
+.fluid-offset-3 {
+  margin-left: 38.25%;
+}
+
+.fluid-offset-4 {
+  margin-left: 51%;
+}
+
+.fluid-offset-5 {
+  margin-left: 63.75%;
+}
+
+.fluid-offset-6 {
+  margin-left: 76.5%;
+}
+
+.fluid-offset-7 {
+  margin-left: 89.25%;
+}
+
 body {
   background-color: rgb(241, 244, 236);
   font: 400 1em/1.38 Helvetica;
@@ -6,9 +555,9 @@ body {
 
 .about {
   float: left;
-  width: 46.7826086956%;
+  width: 46.5277777777%;
   min-height: 45px;
-  margin-left: 6.4347826086%;
+  margin-left: 6.9444444444%;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
   background-color: rgba(4, 24, 114, 0.95);
@@ -16,12 +565,11 @@ body {
   text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
   font: 2.625em/1.38 Lato;
   text-align: center;
-  color: rgb(241, 244, 236);
 }
 
 .apps {
   float: left;
-  width: 46.7826086956%;
+  width: 46.5277777777%;
   min-height: 45px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
@@ -30,8 +578,13 @@ body {
   text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
   font: 2.625em/1.38 Lato;
   text-align: center;
+}
+
+a .about, a .apps{
   color: rgb(241, 244, 236);
 }
+
+
 
 .asterisk {
   display: block;
@@ -45,27 +598,91 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 7;
-  width: 65.6392694063%;
+  z-index: 16;
+  width: 65.6784492588%;
   height: 61px;
-  margin: -409px 0 0 17.00913242%;
+  margin: -409px 0 0 17.1037628278%;
+}
+
+.by-line {
+  position: absolute;
+  top: 3px;
+  left: 132px;
+  z-index: 6;
+  width: 30.6397306397%;
+  height: 109px;
+  min-height: 109px;
+  padding-top: 20px;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(0,0,0);
 }
 
 .container {
   position: relative;
   float: left;
-  z-index: 9;
-  width: 74.5531914893%;
-  height: 795px;
+  width: 74.6382978723%;
+  height: 683px;
   max-height: 795px;
   margin-left: 0.0851063829%;
+}
+
+.github {
+  float: left;
+}
+
+.github .icon {
+  margin-left: -2px;
+}
+
+.github .username {
+  width: 60.5839416058%;
+  height: 32px;
+  min-height: 32px;
+  margin-left: 2.9197080291%;
+  line-height: 2;
+  color: rgb(0,0,0);
+}
+
+.head-shot {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 6.734006734%;
+  z-index: 7;
+  width: 109px;
+  height: auto;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  width: 32px;
+  height: auto;
+  overflow: hidden;
+}
+
+.info {
+  clear: both;
+}
+
+.intro {
+  position: relative;
+  float: left;
+  width: 101.0033444816%;
+  height: 109px;
+  margin: 213px 0 0 -1.0033444817%;
 }
 
 .main {
   position: relative;
   float: left;
   clear: both;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   height: 695px;
   margin-top: -253px;
@@ -84,86 +701,118 @@ body {
 }
 
 .sidebar {
-  position: relative;
   float: right;
   clear: both;
-  z-index: 0;
-  width: 25.5319148936%;
+  width: 25.4468085106%;
   height: 795px;
   max-height: 795px;
-  margin-top: -795px;
-  border-left: 5px solid rgb(150, 149, 137);
-  background-color: rgba(151, 168, 124, 0.56);
+  margin: -795px -0.170212766% 0 0;
+  border-left: 5px solid rgb(112, 106, 44);
+  background-color: rgba(151, 168, 124, 0.24);
   overflow: hidden;
 }
 
 .title {
   display: block;
   position: relative;
-  z-index: 8;
+  z-index: 17;
   width: 524px;
   height: auto;
   margin: 57px auto 0;
   overflow: hidden;
 }
 
+.twitter {
+  float: left;
+}
+
+.twitter .username {
+  width: 74.011299435%;
+  min-height: 25px;
+  margin-left: 3.3898305084%;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
+}
+
+.username {
+  font-size: 0.875em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
 ._container {
   position: absolute;
-  bottom: 150px;
+  bottom: 75px;
   left: 0;
   right: 0;
-  z-index: 4;
-  width: 42.4657534246%;
+  z-index: 13;
+  width: 42.4173318129%;
   height: 37px;
   margin: 0 auto;
+}
+
+.github-1 {
+  width: 46.4882943143%;
+  height: 32px;
+  margin: 24px 0 0 5.3511705685%;
+}
+
+.twitter-1 {
+  width: 60.2006688963%;
+  height: 25px;
+  margin: 8px 0 0 5.016722408%;
 }
 
 @media(max-width: 481px) {
   .buttons .about,
   .buttons .apps {
-    width: 41.9354838709%;
+    width: 40.6392694063%;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
     text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
   }
 
   .container {
-    position: relative;
-    z-index: 9;
-    width: 112.6819126819%;
-  }
-
-  .container .asterisk {
-    height: auto;
+    width: 112.2661122661%;
   }
 
   .container .buttons {
     position: relative;
-    z-index: 7;
-    width: 40.036900369%;
+    z-index: 16;
+    width: 40.5555555555%;
   }
 
   .container .main {
     position: relative;
-    z-index: 1;
-    width: 54.0590405904%;
+    z-index: 10;
+    width: 54.6296296296%;
   }
 
   .container .title {
     position: relative;
-    z-index: 8;
+    z-index: 17;
     height: auto;
   }
 
-  .sidebar {
-    position: relative;
-    z-index: 0;
+  .sidebar .intro {
+    width: 78.4319178968%;
+  }
+
+  .container .asterisk,
+  .github .icon,
+  .intro .head-shot,
+  .twitter .icon {
+    height: auto;
   }
 
   .container ._container {
     left: 0;
     right: 0;
-    width: 25.4612546125%;
+    width: 26.2962962962%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .twitter-1 {
+    width: 61.2749358568%;
   }
 }

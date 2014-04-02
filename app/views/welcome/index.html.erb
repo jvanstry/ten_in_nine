@@ -1,27 +1,31 @@
 <% provide(:title, '10 apps, 9ish weeks') %>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>index</title>
-  <link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/index-grid.css">
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body class="body index clearfix">
-  <section class="container">
-    <img class="title" src="images/10_in_9_logo.png">
-    <div class="main"></div>
-    <div class="buttons clearfix">
-      <h1 onClick="window.location='/projects';" class="apps">Apps</h1>
-      <h1 onClick="window.location='/about';" class="about">About</h1>
-    </div>
-    <footer class="_container clearfix">
-      <img class="asterisk" src="images/asterisk.png">
-      <h4 class="motto">an exercise in self-inflicted suffering</h4>
-    </footer>
-  </section>
-  <div class="sidebar clearfix"></div>
-</body>
-</html>
+<section class="container">
+  <%= image_tag "10_in_9_logo.png", :class => "title" %>
+  <div class="main"></div>
+  <div class="buttons clearfix">
+    <a href="/projects">
+      <h1 class="apps">Apps</h1>
+    </a>
+    <a href="/about">
+      <h1 class="about">About</h1>
+    </a>
+  </div>
+  <footer class="_container clearfix">
+    <%= image_tag "asterisk.png", :class => "asterisk" %>
+    <h4 class="motto">an exercise in self-inflicted suffering</h4>
+  </footer>
+</section>
+<aside class="sidebar clearfix">
+  <div class="intro">
+    <%= image_tag "head_shot.jpeg", :class => "head-shot" %>
+    <h2 class="by-line">Built by Jerry in Rochester NY</h2>
+  </div>
+  <div class="github info github-1">
+    <%= image_tag "github.gif", :class => "github icon" %>
+    <h3 class="github username">jvanstry</h3>
+  </div>
+  <div class="twitter info twitter-1">
+    <%= image_tag "twitter.png", :class => "twitter icon" %>
+    <h3 class="twitter username">@jvanstry</h3>
+  </div>
+</aside>
