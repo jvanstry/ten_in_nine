@@ -1,3 +1,27 @@
 <% provide(:title, '10 apps, 9ish weeks') %>
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>index</title>
+  <link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="body index clearfix">
+  <section class="container">
+    <img class="title" src="images/10_in_9_logo.png">
+    <div class="main"></div>
+    <div class="buttons clearfix">
+      <h1 onClick="window.location='/projects';" class="apps">Apps</h1>
+      <h1 onClick="window.location='/about';" class="about">About</h1>
+    </div>
+    <footer class="_container clearfix">
+      <img class="asterisk" src="images/asterisk.png">
+      <h4 class="motto">an exercise in self-inflicted suffering</h4>
+    </footer>
+  </section>
+  <div class="sidebar clearfix"></div>
+</body>
+</html>

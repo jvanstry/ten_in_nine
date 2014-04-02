@@ -1,3 +1,169 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: rgb(241, 244, 236);
+  font: 400 1em/1.38 Helvetica;
+  color: rgb(0,0,0);
+}
+
+.about {
+  float: left;
+  width: 46.7826086956%;
+  min-height: 45px;
+  margin-left: 6.4347826086%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgba(4, 24, 114, 0.95);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
+  font: 2.625em/1.38 Lato;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.apps {
+  float: left;
+  width: 46.7826086956%;
+  min-height: 45px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
+  font: 2.625em/1.38 Lato;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.asterisk {
+  display: block;
+  float: left;
+  width: 38px;
+  height: auto;
+  overflow: hidden;
+}
+
+.buttons {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 7;
+  width: 65.6392694063%;
+  height: 61px;
+  margin: -409px 0 0 17.00913242%;
+}
+
+.container {
+  position: relative;
+  float: left;
+  z-index: 9;
+  width: 74.5531914893%;
+  height: 795px;
+  max-height: 795px;
+  margin-left: 0.0851063829%;
+}
+
+.main {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 1;
+  width: 100%;
+  height: 695px;
+  margin-top: -253px;
+  background-color: rgb(241, 244, 236);
+}
+
+.motto {
+  float: left;
+  width: 76.6129032258%;
+  min-height: 27px;
+  margin: 5px 0 0 3.4946236559%;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+}
+
+.sidebar {
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 0;
+  width: 25.5319148936%;
+  height: 795px;
+  max-height: 795px;
+  margin-top: -795px;
+  border-left: 5px solid rgb(150, 149, 137);
+  background-color: rgba(151, 168, 124, 0.56);
+  overflow: hidden;
+}
+
+.title {
+  display: block;
+  position: relative;
+  z-index: 8;
+  width: 524px;
+  height: auto;
+  margin: 57px auto 0;
+  overflow: hidden;
+}
+
+._container {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  width: 42.4657534246%;
+  height: 37px;
+  margin: 0 auto;
+}
+
+@media(max-width: 481px) {
+  .buttons .about,
+  .buttons .apps {
+    width: 41.9354838709%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+    text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .container {
+    position: relative;
+    z-index: 9;
+    width: 112.6819126819%;
+  }
+
+  .container .asterisk {
+    height: auto;
+  }
+
+  .container .buttons {
+    position: relative;
+    z-index: 7;
+    width: 40.036900369%;
+  }
+
+  .container .main {
+    position: relative;
+    z-index: 1;
+    width: 54.0590405904%;
+  }
+
+  .container .title {
+    position: relative;
+    z-index: 8;
+    height: auto;
+  }
+
+  .sidebar {
+    position: relative;
+    z-index: 0;
+  }
+
+  .container ._container {
+    left: 0;
+    right: 0;
+    width: 25.4612546125%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
