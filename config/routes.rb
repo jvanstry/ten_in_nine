@@ -1,5 +1,6 @@
 TenInNine::Application.routes.draw do
   root 'welcome#index'
+  get 'about', to: 'welcome#about', as: 'about'
 
   get 'login', to: 'sessions#new', as: 'login'
   post 'login', to: 'sessions#create', as: 'session'  
