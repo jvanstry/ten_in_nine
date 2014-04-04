@@ -1,0 +1,62 @@
+.show-description {
+  float: left;
+  width: 90.1502504173%;
+  height: 340px;
+  min-height: 100px;
+  margin: 8px 0 0 4.1736227045%;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+  overflow: hidden;
+}
+
+.show-project-container {
+  float: left;
+  clear: both;
+  width: 68.4571428571%;
+  height: 577px;
+  margin: 47px 0 0 17.1428571428%;
+}
+
+.show-project-title {
+  width: 56.5714285714%;
+  min-height: 107px;
+  margin: 22px auto 0;
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  font-size: 4.5em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.show-tags {
+  float: left;
+  width: 56.0934891485%;
+  min-height: 43px;
+  margin: -102px 0 0 4.0066777963%;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: rgb(0,0,0);
+}
+
+.source-code {
+  float: left;
+  width: 54.2570951585%;
+  min-height: 45px;
+  margin: 76px 0 0 4.0066777963%;
+  font-size: 1.5em;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+}
+
+.show-thumbnail {
+  display: block;
+  float: left;
+  width: 206px;
+  height: auto;
+  margin: 23px 0 0 1.6694490818%;
+  overflow: hidden;
+}
