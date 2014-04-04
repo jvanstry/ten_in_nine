@@ -1,17 +1,22 @@
 <% provide(:title, 'App') %>
 <% content_for(:body_class, 'show') %>
 <section class="container">
-    <h1 class="show-project-title">
-      <%= @project.name %><br>
-    </h1>
-    <div class="show-project-container">
-      <%= image_tag "#{@project.thumbnail_url}", :class => "show-thumbnail" %>
-      <h3 class="source-code">
-        <a href='<%= @project.github_url %>'>Check out Source Code</a>
-      </h3>
-      <h3 class="show-tags">Tags: Eleifend option congue</h3>
-      <p class="show-description">
-        <%= @project.description %>
-      </p>
-    </div>
-  </section>
+  <h1 class="show-project-title">
+    <%= @project.name %><br>
+  </h1>
+  <div class="show-project-container">
+    <%= image_tag "#{@project.thumbnail_url}", :class => "show-thumbnail" %>
+    <h3 class="source-code">
+      <a href='<%= @project.github_url %>'>Check out Source Code</a>
+    </h3>
+    <h3 class="show-tags">
+      Tags: <%= raw @project.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
+    </h3>
+    <p class="show-description">
+      <%= @project.description %>
+    </p>
+  </div>
+</section>
+  <%= render "shared/sidebar" %>
+  <%= render "shared/apps_link" %>
+  <%= render "shared/tags" %>
