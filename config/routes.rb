@@ -8,5 +8,7 @@ TenInNine::Application.routes.draw do
 
   resources :projects
 
+  get 'tags/:tag', to: 'projects#index', as: :tag
+
   get 'users/:id', to: 'users#show', as: 'user' 
 end

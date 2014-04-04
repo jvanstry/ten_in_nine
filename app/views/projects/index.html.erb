@@ -1,1 +1,20 @@
 <% provide(:title, 'Projects') %>
+<% content_for(:body_class, 'projects') %>
+  <section class="container">
+    <h1 class="projects-title">Apps<br></h1>
+    <% @projects.each do |project| %>
+    <div class="project-container">
+      <h2 class="project-title"><%= project.name %></h2>
+      <%= image_tag "#{project.thumbnail_url}", :class => "thumbnail" %>
+      <h4 class="project-description"><%= project.description %></h4>
+      <h3 class="project-tags">Tags: <% project.tag_list.each do |tag| %>
+                                     <%= tag %>
+                                     <% end %>
+      </h3>
+    </div>
+    <% end %>
+  </section>
+  <%= render "shared/sidebar" %>
+  <%= render "shared/tags" %>
+</body>
+</html>

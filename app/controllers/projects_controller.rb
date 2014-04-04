@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
   def destroy
-    hacker_please unless current_user
+    return hacker_please unless current_user
     
     Project.find(params[:id]).destroy
     
@@ -10,7 +10,11 @@ class ProjectsController < ApplicationController
   end
 
   def index
+  if params[:tag]
+    @projects = Project.tagged_with(params[:tag])
+  else
     @projects = Project.all
+  end
   end
 
   def show

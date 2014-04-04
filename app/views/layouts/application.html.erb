@@ -9,7 +9,7 @@
   <link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
   <%= csrf_meta_tags %>
 </head>
-<body class="body index clearfix">
+<body class="body <%= yield :body_class %> clearfix">
   <% flash.each do |key, value| %>
     <div class="error <%= key %>"><%= value %></div>
   <% end %>

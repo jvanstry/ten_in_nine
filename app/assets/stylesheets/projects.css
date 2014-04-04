@@ -1,3 +1,402 @@
-// Place all the styles related to the Projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.fluid-span-1 {
+  width: 10.75%;
+}
+
+.fluid-span-2 {
+  width: 23.5%;
+}
+
+.fluid-span-3 {
+  width: 36.25%;
+}
+
+.fluid-span-4 {
+  width: 49%;
+}
+
+.fluid-span-5 {
+  width: 61.75%;
+}
+
+.fluid-span-6 {
+  width: 74.5%;
+}
+
+.fluid-span-7 {
+  width: 87.25%;
+}
+
+.fluid-span-8 {
+  width: 100%;
+}
+
+.fluid-offset-1 {
+  margin-left: 12.75%;
+}
+
+.fluid-offset-2 {
+  margin-left: 25.5%;
+}
+
+.fluid-offset-3 {
+  margin-left: 38.25%;
+}
+
+.fluid-offset-4 {
+  margin-left: 51%;
+}
+
+.fluid-offset-5 {
+  margin-left: 63.75%;
+}
+
+.fluid-offset-6 {
+  margin-left: 76.5%;
+}
+
+.fluid-offset-7 {
+  margin-left: 89.25%;
+}
+
+.project-container {
+  float: left;
+  clear: both;
+  width: 68.4571428571%;
+  height: 261px;
+  margin: 47px 0 0 17.1428571428%;
+}
+
+.project-description {
+  float: left;
+  width: 62.9382303839%;
+  height: 110px;
+  min-height: 100px;
+  margin: 22px 0 0 2.1702838063%;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+  overflow: hidden;
+}
+
+.project-tags {
+  float: left;
+  clear: both;
+  width: 62.7712854757%;
+  min-height: 43px;
+  margin: -43px 0 0 31.552587646%;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgb(0,0,0);
+}
+
+.project-title {
+  float: left;
+  width: 46.0767946577%;
+  min-height: 58px;
+  margin-left: 25.041736227%;
+  font-size: 2em;
+  line-height: 1.6;
+  text-align: center;
+  color: rgb(0,0,0);
+}
+
+.sidebar {
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 12;
+  width: 25.3617021276%;
+  height: 900px;
+  max-height: 900px;
+  margin: -921px -0.085106383% 0 0;
+  border-top: 5px solid rgb(0, 0, 0);
+  border-left: 5px solid rgb(112, 106, 44);
+  background-color: rgba(151, 168, 124, 0.24);
+  overflow: hidden;
+}
+
+.tags {
+  float: left;
+  clear: both;
+  width: 85.1145038167%;
+  min-height: 152px;
+  margin: 14px 0 0 8.3969465648%;
+  font: 400 1.5em/1.38 Helvetica;
+  text-align: center;
+  color: rgb(0,0,0);
+  line-height: 1.6em;
+  position: relative;
+}
+
+.s { font-size: 0.8em; }
+.m { font-size: 1.2em; }
+.l { font-size: 1.8em; }
+
+.tags a{
+  z-index: 1000;
+}
+
+.tags a:hover{
+  cursor: pointer;
+}
+
+.tags-cotainer {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 2;
+  width: 22.2978723404%;
+  height: 243px;
+  margin: -420px 0 0 76.5106382978%;
+}
+
+.tags-title {
+  float: left;
+  width: 45.4198473282%;
+  min-height: 38px;
+  margin: 14px 0 0 25.9541984732%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgba(4, 24, 114, 0.95);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  font: 1.75em/1.38 Helvetica;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.thumbnail {
+  display: block;
+  float: left;
+  clear: both;
+  width: 165px;
+  height: auto;
+  margin: 22px 0 0 1.6694490818%;
+  overflow: hidden;
+}
+
+.projects-title {
+  width: 56.5714285714%;
+  min-height: 107px;
+  margin: 22px auto 0;
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  font-size: 4.5em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.twitter {
+  float: left;
+}
+
+.twitter .username {
+  width: 44.5086705202%;
+  min-height: 25px;
+  margin-left: 3.4682080924%;
+  color: rgb(0, 0, 0);
+}
+
+.username {
+  font-family: Helvetica;
+  font-size: 0.875em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.github-1 {
+  width: 47.3154362416%;
+  height: 32px;
+  margin: 24px 0 0 5.3691275167%;
+}
+
+.twitter-1 {
+  width: 59.0604026845%;
+  height: 25px;
+  margin: 8px 0 0 5.0335570469%;
+}
+
+@media(max-width: 860px) {
+  .container .title {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .github .icon {
+    height: auto;
+    margin-top: -2px;
+    margin-left: 31px;
+  }
+
+  .github .username {
+    width: 25.6401194833%;
+    height: 28px;
+    min-height: nonepx;
+    margin-top: 2px;
+    margin-left: 24.9005006521%;
+  }
+
+  .intro .by-line {
+    top: 116px;
+    left: 7.1680376028%;
+    width: 81.5511163337%;
+    height: 43px;
+    min-height: nonepx;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .sidebar {
+    position: relative;
+    z-index: 12;
+    width: 100%;
+  }
+
+  .sidebar .intro {
+    width: 99.5348837209%;
+    height: 152px;
+  }
+
+  .tags-cotainer {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tags-cotainer .tags-title {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .intro .head-shot,
+  .project-container .thumbnail,
+  .twitter .icon {
+    height: auto;
+  }
+
+  .github-1 {
+    margin-top: 758px;
+    margin-left: 25.2325581395%;
+  }
+
+  .twitter-1 {
+    width: 22.9069767441%;
+    margin-left: 29.4186046511%;
+  }
+}
+
+@media(max-width: 650px) {
+  body {
+    font-size: 1em;
+  }
+
+  .container .title {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .github .username {
+    margin-top: 1px;
+    margin-left: 2.594355285%;
+  }
+
+  .intro .by-line {
+    top: 121px;
+    height: 22px;
+  }
+
+  .intro .head-shot {
+    top: 7px;
+    height: auto;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 355px;
+    right: -0.1538461539%;
+    height: 150px;
+    border-left-width: 0;
+    border-top-color: rgb(112, 106, 44);
+    border-left-style: none;
+  }
+
+  .sidebar .intro {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tags-cotainer {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tags-cotainer .tags-title {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .github .icon,
+  .project-container .thumbnail,
+  .twitter .icon {
+    height: auto;
+  }
+
+  .github-1 {
+    margin-top: 31px;
+  }
+}
+
+@media(max-width: 481px) {
+  .container .title {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .github .icon {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .github .username {
+    margin-left: 6.9565217391%;
+  }
+
+  .sidebar .info {
+    width: 23.9085239085%;
+    margin-left: 48.6486486486%;
+  }
+
+  .sidebar .intro {
+    left: 0;
+    right: 0;
+    width: 78.5862785862%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tags-cotainer {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tags-cotainer .tags {
+    width: 68.06351272%;
+  }
+
+  .tags-cotainer .tags-title {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .intro .head-shot,
+  .project-container .thumbnail,
+  .twitter .icon {
+    height: auto;
+  }
+}

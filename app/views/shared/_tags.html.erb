@@ -1,0 +1,8 @@
+  <div class="tags-cotainer">
+    <h2 class="tags-title">Tags</h2>
+    <div class="tags" id="tag_cloud">
+      <% tag_cloud Project.tag_counts, %w{s m l} do |tag, css_class| %>
+        <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+      <% end %>
+    </div>
+  </div>

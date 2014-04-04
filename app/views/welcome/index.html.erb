@@ -1,4 +1,5 @@
 <% provide(:title, '10 apps, 9ish weeks') %>
+<% content_for(:body_class, 'index') %>
 <section class="container">
   <%= image_tag "10_in_9_logo.png", :class => "title" %>
   <div class="main"></div>
@@ -12,7 +13,7 @@
   </div>
   <footer class="_container clearfix">
     <%= image_tag "asterisk.png", :class => "asterisk" %>
-    <h4 class="motto">an exercise in self-inflicted suffering</h4>
+    <h4 class="motto">an exercise in <del>suffering</del> learning</h4>
   </footer>
 </section>
 <%= render "shared/sidebar" %>
