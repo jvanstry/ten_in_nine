@@ -6,6 +6,10 @@
   margin: 47px 0 0 17.1428571428%;
 }
 
+.project-container:hover{
+  cursor: pointer;
+}
+
 .project-description {
   float: left;
   width: 62.9382303839%;

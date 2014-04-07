@@ -1,2 +1,8 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(function() {
+  $('.project-container').click(function(){
+    var projectID = $(this).data("id");
+    var host = window.location.origin;
+    var projectURL = host + "/projects/" + projectID
+    window.location.href = projectURL;
+  })
+});
