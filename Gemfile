@@ -24,4 +24,6 @@ gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
 
+gem 'newrelic_rpm'
+
 ruby "1.9.3"
