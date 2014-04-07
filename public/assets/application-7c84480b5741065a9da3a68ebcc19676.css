@@ -1,0 +1,1301 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+.about-text {
+  float: left;
+  clear: both;
+  width: 65.8285714285%;
+  min-height: 342px;
+  margin: 61px 0 0 17.1428571428%;
+  font-weight: 650;
+  line-height: 1.85;
+  color: rgb(0,0,0);
+  text-align: justify;
+}
+
+.about-title {
+  width: 56.5714285714%;
+  min-height: 107px;
+  margin: 22px auto 0;
+  border-radius: 15px;
+  background-color: rgba(4, 24, 114, 0.95);
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  font-size: 4.5em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.apps-link {
+  float: left;
+  width: 76.282051282%;
+  min-height: 38px;
+  margin: 5px 0 0 6%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  font: 1.75em/1.38 Helvetica;
+  text-align: center;
+}
+
+.apps-link:hover{
+  cursor: pointer;
+}
+
+.apps-link a{
+  color: rgb(241, 244, 236);
+}
+
+.apps-link-container {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 3;
+  width: 13.2765957446%;
+  height: 53px;
+  margin: -420px 0 0 79.0638297872%;
+}
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    font-weight: inherit; /* 1 */
+    margin: 0; /* 3 */
+    padding: 0;
+}
+
+/**
+ * Remove the default button background color that browsers set
+ */
+
+button {
+    background: transparent;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * Make sure selects don't get the default browser styles.
+ */
+select {
+  -webkit-appearance: none;
+}
+
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ * 3. Disable resizing by default.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    resize: none; /* 3 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul, li {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+button,
+input {
+  font-size: inherit;
+  color: inherit;
+  border: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.project-container {
+  float: left;
+  clear: both;
+  width: 68.4571428571%;
+  height: 261px;
+  margin: 47px 0 0 17.1428571428%;
+}
+
+.project-container:hover{
+  cursor: pointer;
+}
+
+.project-description {
+  float: left;
+  width: 62.9382303839%;
+  height: 80px;
+  min-height: 0px;
+  margin: 22px 0 0 2.1702838063%;
+  font-weight: 400;
+  line-height: 1.32;
+  color: rgb(0,0,0);
+  overflow: hidden;
+}
+
+.project-tags {
+  float: left;
+  clear: both;
+  width: 62.7712854757%;
+  min-height: 43px;
+  margin: -20px 0 0 34%;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgb(0,0,0);
+}
+
+.project-title {
+  float: left;
+  width: 90%;
+  min-height: 58px;
+  margin-left: 5%;
+  font-size: 2em;
+  line-height: 1.6;
+  text-align: center;
+  color: rgb(0,0,0);
+}
+
+.sidebar {
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 12;
+  width: 25.3617021276%;
+  height: 900px;
+  max-height: 900px;
+  margin: -921px -0.085106383% 0 0;
+  border-top: 5px solid rgb(0, 0, 0);
+  border-left: 5px solid rgb(112, 106, 44);
+  background-color: rgba(151, 168, 124, 0.24);
+  overflow: hidden;
+}
+
+.tags {
+  float: left;
+  clear: both;
+  width: 85.1145038167%;
+  min-height: 152px;
+  margin: 14px 0 0 8.3969465648%;
+  font: 400 1.5em/1.38 Helvetica;
+  text-align: center;
+  color: rgb(0,0,0);
+  line-height: 1.6em;
+  position: relative;
+}
+
+.s { font-size: 0.8em; }
+.m { font-size: 1.2em; }
+.l { font-size: 1.8em; }
+
+.tags a{
+  z-index: 1000;
+}
+
+.tags a:hover{
+  cursor: pointer;
+}
+
+.tags-cotainer {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 2;
+  width: 22.2978723404%;
+  height: 243px;
+  margin: -370px 0 0 74%;
+}
+
+.tags-title {
+  float: left;
+  width: 45.4198473282%;
+  min-height: 38px;
+  margin: 14px 0 0 25.9541984732%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgba(4, 24, 114, 0.95);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  font: 1.75em/1.38 Helvetica;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.thumbnail {
+  display: block;
+  float: left;
+  clear: both;
+  width: 165px;
+  height: auto;
+  margin: 22px 0 0 1.6694490818%;
+  overflow: hidden;
+}
+
+.projects-title {
+  width: 56.5714285714%;
+  min-height: 107px;
+  margin: 22px auto 0;
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  font-size: 4.5em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.twitter {
+  float: left;
+}
+
+.twitter .username {
+  width: 44.5086705202%;
+  min-height: 25px;
+  margin-left: 3.4682080924%;
+  color: rgb(0, 0, 0);
+}
+
+.username {
+  font-family: Helvetica;
+  font-size: 0.875em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.github-1 {
+  width: 47.3154362416%;
+  height: 32px;
+  margin: 24px 0 0 5.3691275167%;
+}
+
+.twitter-1 {
+  width: 59.0604026845%;
+  height: 25px;
+  margin: 8px 0 0 5.0335570469%;
+}
+
+@media(max-width: 860px) {
+  .container .title {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .github .icon {
+    height: auto;
+    margin-top: -2px;
+    margin-left: 31px;
+  }
+
+  .github .username {
+    width: 25.6401194833%;
+    height: 28px;
+    min-height: nonepx;
+    margin-top: 2px;
+    margin-left: 24.9005006521%;
+  }
+
+  .intro .by-line {
+    top: 116px;
+    left: 7.1680376028%;
+    width: 81.5511163337%;
+    height: 43px;
+    min-height: nonepx;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .sidebar {
+    position: relative;
+    z-index: 12;
+    width: 100%;
+  }
+
+  .sidebar .intro {
+    width: 99.5348837209%;
+    height: 152px;
+  }
+
+  .tags-cotainer {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tags-cotainer .tags-title {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .intro .head-shot,
+  .project-container .thumbnail,
+  .twitter .icon {
+    height: auto;
+  }
+
+  .github-1 {
+    margin-top: 758px;
+    margin-left: 25.2325581395%;
+  }
+
+  .twitter-1 {
+    width: 22.9069767441%;
+    margin-left: 29.4186046511%;
+  }
+}
+
+@media(max-width: 650px) {
+  body {
+    font-size: 1em;
+  }
+
+  .container .title {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .github .username {
+    margin-top: 1px;
+    margin-left: 2.594355285%;
+  }
+
+  .intro .by-line {
+    top: 121px;
+    height: 22px;
+  }
+
+  .intro .head-shot {
+    top: 7px;
+    height: auto;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 355px;
+    right: -0.1538461539%;
+    height: 150px;
+    border-left-width: 0;
+    border-top-color: rgb(112, 106, 44);
+    border-left-style: none;
+  }
+
+  .sidebar .intro {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tags-cotainer {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tags-cotainer .tags-title {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .github .icon,
+  .project-container .thumbnail,
+  .twitter .icon {
+    height: auto;
+  }
+
+  .github-1 {
+    margin-top: 31px;
+  }
+}
+
+@media(max-width: 481px) {
+  .container .title {
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  }
+
+  .github .icon {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .github .username {
+    margin-left: 6.9565217391%;
+  }
+
+  .sidebar .info {
+    width: 23.9085239085%;
+    margin-left: 48.6486486486%;
+  }
+
+  .sidebar .intro {
+    left: 0;
+    right: 0;
+    width: 78.5862785862%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tags-cotainer {
+    position: relative;
+    z-index: 2;
+  }
+
+  .tags-cotainer .tags {
+    width: 68.06351272%;
+  }
+
+  .tags-cotainer .tags-title {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .intro .head-shot,
+  .project-container .thumbnail,
+  .twitter .icon {
+    height: auto;
+  }
+}
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.show-project-container {
+  float: left;
+  clear: both;
+  width: 68.4571428571%;
+  height: 577px;
+  margin: 47px 0 0 17.1428571428%;
+}
+
+.show-project-title {
+  width: 56.5714285714%;
+  min-height: 107px;
+  margin: 22px auto 0;
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, .5);
+  text-shadow: 2px 0 5px 2px rgba(0, 0, 0, .5);
+  font-size: 4.5em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(241, 244, 236);
+}
+
+.show-tags {
+  float: left;
+  width: 56.0934891485%;
+  min-height: 43px;
+  margin: -102px 0 0 4.0066777963%;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: rgb(0,0,0);
+}
+
+.source-code {
+  float: left;
+  width: 54.2570951585%;
+  min-height: 45px;
+  margin: 76px 0 0 4.0066777963%;
+  font-size: 1.5em;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+}
+
+.show-thumbnail {
+  display: block;
+  float: left;
+  width: 206px;
+  height: auto;
+  margin: 23px 0 0 1.6694490818%;
+  overflow: hidden;
+}
+
+.show-description {
+  float: left;
+  width: 90.1502504173%;
+  height: 340px;
+  min-height: 100px;
+  margin: 8px 0 0 4.1736227045%;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+  overflow: hidden;
+}
+.fluid-span-1 {
+  width: 10.75%;
+}
+
+.fluid-span-2 {
+  width: 23.5%;
+}
+
+.fluid-span-3 {
+  width: 36.25%;
+}
+
+.fluid-span-4 {
+  width: 49%;
+}
+
+.fluid-span-5 {
+  width: 61.75%;
+}
+
+.fluid-span-6 {
+  width: 74.5%;
+}
+
+.fluid-span-7 {
+  width: 87.25%;
+}
+
+.fluid-span-8 {
+  width: 100%;
+}
+
+.fluid-offset-1 {
+  margin-left: 12.75%;
+}
+
+.fluid-offset-2 {
+  margin-left: 25.5%;
+}
+
+.fluid-offset-3 {
+  margin-left: 38.25%;
+}
+
+.fluid-offset-4 {
+  margin-left: 51%;
+}
+
+.fluid-offset-5 {
+  margin-left: 63.75%;
+}
+
+.fluid-offset-6 {
+  margin-left: 76.5%;
+}
+
+.fluid-offset-7 {
+  margin-left: 89.25%;
+}
+
+body {
+  background-color: rgb(241, 244, 236);
+  font: 400 1em/1.38 Helvetica;
+  color: rgb(0,0,0);
+}
+
+.about {
+  float: left;
+  width: 46.5277777777%;
+  min-height: 45px;
+  margin-left: 6.9444444444%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgba(4, 24, 114, 0.95);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
+  font: 2.625em/1.38 Lato;
+  text-align: center;
+}
+
+.apps {
+  float: left;
+  width: 46.5277777777%;
+  min-height: 45px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: rgb(243, 12, 12);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
+  font: 2.625em/1.38 Lato;
+  text-align: center;
+}
+
+a .about, a .apps{
+  color: rgb(241, 244, 236);
+}
+
+
+
+.asterisk {
+  display: block;
+  float: left;
+  width: 38px;
+  height: auto;
+  overflow: hidden;
+}
+
+.buttons {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 16;
+  width: 65.6784492588%;
+  height: 61px;
+  margin: -409px 0 0 17.1037628278%;
+}
+
+.by-line {
+  position: absolute;
+  top: 3px;
+  left: 132px;
+  z-index: 6;
+  width: 30.6397306397%;
+  height: 109px;
+  min-height: 109px;
+  padding-top: 20px;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(0,0,0);
+}
+
+.container {
+  position: relative;
+  float: left;
+  width: 74.6382978723%;
+  height: 683px;
+  max-height: 795px;
+  margin-left: 0.0851063829%;
+}
+
+.github {
+  float: left;
+}
+
+.github .icon {
+  margin-left: -2px;
+}
+
+.github .username {
+  width: 60.5839416058%;
+  height: 32px;
+  min-height: 32px;
+  margin-left: 2.9197080291%;
+  line-height: 2;
+  color: rgb(0,0,0);
+}
+
+.head-shot {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 6.734006734%;
+  z-index: 7;
+  width: 109px;
+  height: auto;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  width: 32px;
+  height: auto;
+  overflow: hidden;
+}
+
+.info {
+  clear: both;
+}
+
+.intro {
+  position: relative;
+  float: left;
+  width: 101.0033444816%;
+  height: 109px;
+  margin: 213px 0 0 -1.0033444817%;
+}
+
+.main {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 10;
+  width: 100%;
+  height: 695px;
+  margin-top: -253px;
+  background-color: rgb(241, 244, 236);
+}
+
+.motto {
+  float: left;
+  width: 76.6129032258%;
+  min-height: 27px;
+  margin: 5px 0 0 3.4946236559%;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
+}
+
+.sidebar {
+  float: right;
+  clear: both;
+  width: 25.4468085106%;
+  height: 845px;
+  max-height: 845px;
+  margin: -795px -0.170212766% 0 0;
+  border-left: 5px solid rgb(112, 106, 44);
+  background-color: rgba(151, 168, 124, 0.24);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.title {
+  display: block;
+  position: relative;
+  z-index: 17;
+  width: 524px;
+  height: auto;
+  margin: 57px auto 0;
+  overflow: hidden;
+}
+
+.twitter {
+  float: left;
+}
+
+.twitter .username {
+  width: 74.011299435%;
+  min-height: 25px;
+  margin-left: 3.3898305084%;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
+}
+
+.username {
+  font-size: 0.875em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+._container {
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  z-index: 13;
+  width: 42.4173318129%;
+  height: 37px;
+  margin: 0 auto;
+}
+
+.github-1 {
+  width: 46.4882943143%;
+  height: 32px;
+  margin: 24px 0 0 5.3511705685%;
+}
+
+.twitter-1 {
+  width: 60.2006688963%;
+  height: 25px;
+  margin: 8px 0 0 5.016722408%;
+}
+
+@media(max-width: 481px) {
+  .buttons .about,
+  .buttons .apps {
+    width: 40.6392694063%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+    text-shadow: -2px -1px 5px rgba(0, 0, 0, .5);
+  }
+
+  .container {
+    width: 112.2661122661%;
+  }
+
+  .container .buttons {
+    position: relative;
+    z-index: 16;
+    width: 40.5555555555%;
+  }
+
+  .container .main {
+    position: relative;
+    z-index: 10;
+    width: 54.6296296296%;
+  }
+
+  .container .title {
+    position: relative;
+    z-index: 17;
+    height: auto;
+  }
+
+  .sidebar .intro {
+    width: 78.4319178968%;
+  }
+
+  .container .asterisk,
+  .github .icon,
+  .intro .head-shot,
+  .twitter .icon {
+    height: auto;
+  }
+
+  .container ._container {
+    left: 0;
+    right: 0;
+    width: 26.2962962962%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .twitter-1 {
+    width: 61.2749358568%;
+  }
+}
