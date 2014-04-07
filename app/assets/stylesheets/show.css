@@ -1,15 +1,3 @@
-.show-description {
-  float: left;
-  width: 90.1502504173%;
-  height: 340px;
-  min-height: 100px;
-  margin: 8px 0 0 4.1736227045%;
-  font-weight: 400;
-  line-height: 1.38;
-  color: rgb(0,0,0);
-  overflow: hidden;
-}
-
 .show-project-container {
   float: left;
   clear: both;
@@ -58,5 +46,17 @@
   width: 206px;
   height: auto;
   margin: 23px 0 0 1.6694490818%;
+  overflow: hidden;
+}
+
+.show-description {
+  float: left;
+  width: 90.1502504173%;
+  height: 340px;
+  min-height: 100px;
+  margin: 8px 0 0 4.1736227045%;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0,0,0);
   overflow: hidden;
 }

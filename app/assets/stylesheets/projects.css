@@ -9,11 +9,11 @@
 .project-description {
   float: left;
   width: 62.9382303839%;
-  height: 110px;
-  min-height: 100px;
+  height: 80px;
+  min-height: 0px;
   margin: 22px 0 0 2.1702838063%;
   font-weight: 400;
-  line-height: 1.38;
+  line-height: 1.32;
   color: rgb(0,0,0);
   overflow: hidden;
 }
@@ -23,7 +23,7 @@
   clear: both;
   width: 62.7712854757%;
   min-height: 43px;
-  margin: -43px 0 0 31.552587646%;
+  margin: -20px 0 0 34%;
   font-size: 1.1em;
   font-weight: 400;
   line-height: 1.6;
@@ -32,9 +32,9 @@
 
 .project-title {
   float: left;
-  width: 46.0767946577%;
+  width: 90%;
   min-height: 58px;
-  margin-left: 25.041736227%;
+  margin-left: 5%;
   font-size: 2em;
   line-height: 1.6;
   text-align: center;
