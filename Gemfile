@@ -8,6 +8,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
 
+gem 'rake'
+
 gem 'turbolinks'
 
 gem 'bcrypt-ruby', '~> 3.1.2'

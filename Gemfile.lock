@@ -160,6 +160,7 @@ DEPENDENCIES
   pg
   rails (= 4.0.2)
   rails_12factor
+  rake
   rspec-rails (~> 3.0.0.beta)
   turbolinks
   uglifier (>= 1.3.0)
