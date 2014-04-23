@@ -10,7 +10,10 @@ task :dyno_ping do
   require "net/http"
 
   if ENV['PING_URL']
-    uri = URI(ENV['PING_URL'])
-    Net::HTTP.get_response(uri)
+    ping_url = ENV['PING_URL'].split(",")
+    ping_url.each do |url|
+      uri = URI(url)
+      Net::HTTP.get_response(uri)
+    end
   end
 end
